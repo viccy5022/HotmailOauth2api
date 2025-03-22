@@ -15,39 +15,78 @@
     <link rel="modulepreload" href="/assets/chunks/framework.P9qPzDnn.js">
     <link rel="modulepreload" href="/assets/index.md.B5wr9wD6.lean.js">
     <link rel="icon" href="/unix.png">
+    <style>
+      body {
+        text-align: center;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .name {
+        font-size: 48px;
+        font-weight: bold;
+      }
+      .text {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      .tagline {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .VPNavBarMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .VPNavBarMenu button {
+        width: 130px;
+        height: 40px;
+        margin-bottom: 10px;
+        background-color: transparent;
+        color: inherit;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
 
-
-<div class="main">
-  <h1 class="name">
-    <span class="clip">ZPfun API</span>
-  </h1>
-  <p class="text">简化操作流程</p>
-  <p class="tagline">高效、便捷的API取件方案</p>
-  <div class="actions">
-    <div nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-9fd4d1dd data-v-afb2845e>
-  <span id="main-nav-aria-label" class="visually-hidden" data-v-afb2845e> Main Navigation </span>
-  <button class="VPLink link VPNavBarMenuLink active" onclick="window.location.href='/'" style="display: inline-block; margin-right: 30px; width: 130px; height: 40px; background-color: transparent; color: inherit; border: 2px solid #007bff; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; text-align: center;">
-    <span>Home</span>
-  </button>
-  <button class="VPLink link VPNavBarMenuLink" onclick="window.location.href='/api.html'" style="display: inline-block; margin-right: 30px; width: 130px; height: 40px; background-color: transparent; color: inherit; border: 2px solid #007bff; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; text-align: center;">
-    <span>API</span>
-  </button>
-  <button class="VPLink link VPNavBarMenuLink" onclick="window.location.href='/image.html'" style="display: inline-block; margin-right: 30px; width: 130px; height: 40px; background-color: transparent; color: inherit; border: 2px solid #007bff; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; text-align: center;">
-    <span>示例图片</span>
-  </button>
-  <button class="VPLink link VPNavBarMenuLink" onclick="window.location.href='/mail.html'" style="display: inline-block; margin-right: 30px; width: 130px; height: 40px; background-color: transparent; color: inherit; border: 2px solid #007bff; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; text-align: center;">
-    <span>邮箱在线管理</span>
-  </button>
-  <button class="VPLink link VPNavBarMenuLink" onclick="window.location.href='/about.html'" style="display: inline-block; width: 130px; height: 40px; background-color: transparent; color: inherit; border: 2px solid #007bff; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; text-align: center;">
-    <span>关于</span>
-  </button>
-</nav>
-  </div>
-</div>
-
-
+    <div class="main">
+      <h1 class="name">
+        <span class="clip">ZPfun API</span>
+      </h1>
+      <p class="text">简化操作流程</p>
+      <p class="tagline">高效、便捷的API取件方案</p>
+      <div class="actions">
+        <nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu">
+          <span id="main-nav-aria-label" class="visually-hidden"> Main Navigation </span>
+          <button class="VPLink link VPNavBarMenuLink active" onclick="window.location.href='/'">
+            <span>Home</span>
+          </button>
+          <button class="VPLink link VPNavBarMenuLink" onclick="window.location.href='/api.html'">
+            <span>API</span>
+          </button>
+          <button class="VPLink link VPNavBarMenuLink" onclick="window.location.href='/image.html'">
+            <span>示例图片</span>
+          </button>
+          <button class="VPLink link VPNavBarMenuLink" onclick="window.location.href='/mail.html'">
+            <span>邮箱在线管理</span>
+          </button>
+          <button class="VPLink link VPNavBarMenuLink" onclick="window.location.href='/about.html'">
+            <span>关于</span>
+          </button>
+        </nav>
+      </div>
+    </div>
 
   </body>
 </html>
