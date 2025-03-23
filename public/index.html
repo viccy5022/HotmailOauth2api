@@ -83,7 +83,21 @@
         <img src="https://zpfun.club/favicon.png" alt="ZennoPoster Training" width="583" height="220">
       </a>
     </div>
-
+    <style>
+      .text {
+        font-weight: bold; /* 加粗 */
+        font-size: 20px; /* 字体大小 */
+        white-space: nowrap; /* 防止换行 */
+        overflow: hidden;
+        display: inline-block;
+        animation: scrollText 3s linear infinite; /* 滚动动画 */
+      }
+    
+      @keyframes scrollText {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(20px); } /* 向右移动 */
+      }
+    </style>
     <p class="text">👆👆👆ZennoPoster交流社区 👆👆👆</p>
 
     <p class="tagline">高效、便捷的API取件方案</p>
