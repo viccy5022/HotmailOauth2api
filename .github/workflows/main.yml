@@ -1,0 +1,14 @@
+name: Update API Password
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 00:00 UTC 执行一次
+
+jobs:
+  update-password:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call API to update password
+        run: |
+          curl -X POST "https://zpfunapi.zpfun.club/api/update-password" \
+          -H "Authorization: Bearer ${{ secrets.UPDATE_SECRET }}"
