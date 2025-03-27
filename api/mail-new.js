@@ -36,16 +36,6 @@ const generateAuthString = (user, accessToken) => {
 
 module.exports = async (req, res) => {
 
-    const { password } = req.method === 'GET' ? req.query : req.body;
-
-    const expectedPassword = process.env.PASSWORD;
-
-    if (password !== expectedPassword && expectedPassword) {
-        return res.status(401).json({
-            error: 'Authentication failed. Please provide valid credentials or contact administrator for access. Refer to API documentation for deployment details.'
-        });
-    }
-
     // 根据请求方法从 query 或 body 中获取参数
     const params = req.method === 'GET' ? req.query : req.body;
     const { refresh_token, client_id, email, mailbox, response_type = 'json' } = params;
